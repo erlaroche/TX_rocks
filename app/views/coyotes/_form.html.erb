@@ -1,0 +1,17 @@
+<%= form_for(@coyote) do |f| %>
+  <% if @coyote.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@coyote.errors.count, "error") %> prohibited this coyote from being saved:</h2>
+
+      <ul>
+      <% @coyote.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
