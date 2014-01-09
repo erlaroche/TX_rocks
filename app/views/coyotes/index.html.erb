@@ -1,4 +1,4 @@
-<h1>Listing coyotes</h1>
+<h1>A Bunch-o-Coyotes</h1>
 
 <table>
   <thead>
@@ -13,6 +13,8 @@
   <tbody>
     <% @coyotes.each do |coyote| %>
       <tr>
+        <td><%= image_tag ("http://wdfw.wa.gov/living/species/graphics/coyote1.jpg") %></td>
+      </br>
         <td><%= link_to 'Show', coyote %></td>
         <td><%= link_to 'Edit', edit_coyote_path(coyote) %></td>
         <td><%= link_to 'Destroy', coyote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
