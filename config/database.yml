@@ -1,15 +1,13 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: myapp-development
+  database: coyote-development
   pool: 5
-  port: 15432
   host: localhost
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: myapp-test
+  database: coyote-test
   pool: 5
-  port: 15432
   host: localhost
